@@ -28,17 +28,27 @@ numerical data structures and is scheduled to feature the options marked with a 
 the near future: 
 
 Integers (0..999*10**48), takes either a string or an integer.
+
 --Soon to come: Floats/Scientific measurements
+
 Telephone numbers (international, local, mobile and 800 numbers)-->this feature uses 
-regexes to discover phonetic patterns in your data to make tel numbers more memorable! 
+regexes to discover phonetic patterns in your data to make tel numbersmore memorable! 
+
 --Soon to come: Zips && Post Codes 
+
 --Soon to come: Pages
+
 --Soon to come: Checks
+
 --Soon to come: Co-ordinates 
+
 --Soon to come: ISBNs
+
 --Soon to come: Pay_as_you_go mobile telephony activation codes
---Soon to come: An explaining facility on how big is that number, with examples drawn by science ##feel free to contribute on this one as long as you are willing and 
-able to cross-reference!
+
+--Soon to come: An explaining facility on how big is that number, with examples 
+drawn by science (feel free to contribute on this one as long as you are willing and 
+able to cross-reference!)
 
 ## Installation
 
