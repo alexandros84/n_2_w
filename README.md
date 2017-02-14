@@ -84,6 +84,7 @@ For an integer, <%= N2W::Spint.any_other b %>
 
 For a tel number, N2W::Tel.sortln a (for pattern finder) or N2W::Tel.tel_number a (for suggestive or standard mode). 
 --where <%= a="///80-50600-87776" %>
+Please note that if sortln can't find more than one pattern on the input number, it will default to tel_number automatically.
 
 ## Development
 
