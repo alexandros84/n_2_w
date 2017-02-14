@@ -1,4 +1,4 @@
-# N2W
+# N2W (number_to_word!)
 
 --Convert numeric data into friendly, human-like verbal expressions that match 
 the occasion!
@@ -13,26 +13,37 @@ giving your rails app, the ability to express large volumes of numerical data in
 words, in a way that sounds more natural. 
 
 This might be useful to people for example who have a large database of phone 
-numbers and they use .erb and tts technology in order to communicate this information 
+numbers and they use text-to-speech technology in order to communicate their data phonetically 
 with their clients. This might be also useful to people who work with educational tts 
-resources and they want to have scientific data (float readings, co-ordinates or 
-no. of pages) read out loud during a presentation, in a more human-like manner 
-than a single digit after the other.   
-
-Finally, this might be useful in order to communicate various other data types with a more 
-or less standard format, like zips post codes, ISBN's and twelve || sixteen digit 
-activation tokens. 
+resources and they want to readily transform scores of scientific data (float readings, co-ordinates or 
+no. of pages) into words that can be read out loud during a presentation, in a more human-like 
+fashion than one single digit after the other.   
 
 This facility already includes class methods for the explicit expression of the following 
-numerical data structures and is scheduled to feature the options marked with a # in 
+numerical data structures and is scheduled to feature the options marked with a in 
 the near future: 
 
-Integers (0..999*10**48), takes either a string or an integer.
+--Integers: (0..999*10^48), takes either a string or an integer.
+
+--Telephone numbers: this feature uses reg expressions to discover phonetic patterns in your data 
+in order to make tel numbers more memorable! 
+
+The program also uses three modes in order to verbally express tel. numbers:
+
+
+a) patterns: "0589998850">>zero five eight, triple nine, double eight, five zero
+
+
+b) suggestive: "////222-108-2822"">>triple two, one zero, eight two eight, double two
+
+
+c) standard: "51371082918">>fifty one, three seven one, zero eighty two, nine one eight
+
+
+and it has a little sorting algorithm at the top of it all in order to decide whether to go with a, b or c.  
+
 
 --Soon to come: Floats/Scientific measurements
-
-Telephone numbers (international, local, mobile and 800 numbers)-->this feature uses 
-regexes to discover phonetic patterns in your data to make tel numbersmore memorable! 
 
 --Soon to come: Zips && Post Codes 
 

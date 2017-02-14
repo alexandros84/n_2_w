@@ -11,8 +11,9 @@ Gem::Specification.new do |spec|
 
   spec.summary       = %q{"--Convert numeric data into friendly, human-like verbal expressions that match 
 the occasion!"}
-  spec.description   = %q{""}
-  spec.homepage      = ""
+  spec.description   = %q{"--Convert numeric data into friendly, human-like verbal expressions that match 
+the occasion!"}
+  spec.homepage      = "https://github.com/alexandros84/n_2_w"
   spec.license       = "MIT"
 
   
