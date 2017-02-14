@@ -3,6 +3,43 @@
 --Convert numeric data into friendly, human-like verbal expressions that match 
 the occasion!
 
+N2W or number_to_word, is a ruby gem that allows you to transform numeric data 
+into verbal expressions. 
+
+The way that we express numbers verbally (or the way that we choose to iterate 
+phonetically numerical data --whatever you prefer!) differs from one occasion 
+to another, according to our intention and purpose. This ruby gem is all about 
+giving your rails app, the ability to express large volumes of numerical data in
+words, in a way that sounds more natural. 
+
+This might be useful to people for example who have a large database of phone 
+numbers and they use .erb and tts technology in order to communicate this information 
+with their clients. This might be also useful to people who work with educational tts 
+resources and they want to have scientific data (float readings, co-ordinates or 
+no. of pages) read out loud during a presentation, in a more human-like manner 
+than a single digit after the other.   
+
+Finally, this might be useful in order to communicate various other data types with a more 
+or less standard format, like zips post codes, ISBN's and twelve || sixteen digit 
+activation tokens. 
+
+This facility already includes class methods for the explicit expression of the following 
+numerical data structures and is scheduled to feature the options marked with a # in 
+the near future: 
+
+Integers (0..999*10**48), takes either a string or an integer.
+--Soon to come: Floats/Scientific measurements
+Telephone numbers (international, local, mobile and 800 numbers)-->this feature uses 
+regexes to discover phonetic patterns in your data to make tel numbers more memorable! 
+--Soon to come: Zips && Post Codes 
+--Soon to come: Pages
+--Soon to come: Checks
+--Soon to come: Co-ordinates 
+--Soon to come: ISBNs
+--Soon to come: Pay_as_you_go mobile telephony activation codes
+--Soon to come: An explaining facility on how big is that number, with examples drawn by science ##feel free to contribute on this one as long as you are willing and 
+able to cross-reference!
+
 ## Installation
 
 Add this line to your application's Gemfile:
