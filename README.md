@@ -79,7 +79,11 @@ Or install it yourself as:
 
 ## Usage
 
-Simply require N2W/Spint and call any_other on any integer or string/integer of ur choice. 
+For an integer, <%= N2W::Spint.any_other b %>
+--where <%= b=" 805060087776" %>
+
+For a tel number, N2W::Tel.sortln a (for pattern finder) or N2W::Tel.tel_number a (for suggestive or standard mode). 
+--where <%= a="///80-50600-87776" %>
 
 ## Development
 
