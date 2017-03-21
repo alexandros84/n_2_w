@@ -34,7 +34,7 @@ The program also uses three modes in order to verbally express tel. numbers:
 a) patterns: "0589998850">>zero five eight, triple nine, double eight, five zero
 
 
-b) suggestive: "////222-108-2822"">>triple two, one zero, eight two eight, double two
+b) suggestive: "////222-108-2822"">>triple two, one zero eight, twenty eight, double two
 
 
 c) standard: "51371082918">>fifty one, three seven one, zero eighty two, nine one eight
