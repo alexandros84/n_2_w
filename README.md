@@ -1,6 +1,6 @@
-# N2W (number_to_word!)
+# n_2_w (number_to_word!)
 
---Convert numeric data into friendly, human-like verbal expressions that match 
+###Convert numeric data into friendly, human-like verbal expressions that match 
 the occasion!
 
 N2W or number_to_word, is a ruby gem that allows you to transform numeric data 
@@ -10,7 +10,7 @@ The way that we express numbers verbally (or the way that we choose to iterate
 phonetically numerical data --whatever you prefer!) differs from one occasion 
 to another, according to our intention and purpose. This ruby gem is all about 
 giving your rails app, the ability to express large volumes of numerical data in
-words, in a way that sounds more natural. 
+words, in a way that is more intelligent and sounds more natural. 
 
 This might be useful to people for example who have a large database of phone 
 numbers and they use text-to-speech technology in order to communicate their data phonetically 
@@ -23,39 +23,43 @@ This facility already includes class methods for the explicit expression of the 
 numerical data structures and is scheduled to feature the options marked with a in 
 the near future: 
 
---Integers: (0..999*10^48), takes either a string or an integer.
+* Integers: (0..999*10^48), takes either a string or an integer.
 
---Telephone numbers: this feature uses reg expressions to discover phonetic patterns in your data 
+* Telephone numbers: this feature uses reg expressions to discover phonetic patterns in your data 
 in order to make tel numbers more memorable! 
 
-The program also uses three modes in order to verbally express tel. numbers:
+The program is currently using three modes in order to output tel. numbers:
 
 
-a) patterns: "0589998850">>zero five eight, triple nine, double eight, five zero
+a) patterns: patterns uses regular expressions to detect patterns inside the number.
+
+For example, "0589998850" will be: "zero five eight, triple nine, double eight, five zero".
 
 
-b) suggestive: "////222-108-2822"">>triple two, one zero eight, twenty eight, double two
+b) suggestive: suggestive makes use of the notation provided by the author either as whitespace or as any non digit symbol. For example, "////222-108-2822" will become: "triple two, one zero eight, twenty eight, double two".
 
 
-c) standard: "51371082918">>fifty one, three seven one, zero eighty two, nine one eight
+c) standard: standard breaks the number to a standard array format on the sole criterion of whether length is even or odd.  
+For example, "51371082918" will be: "fifty one, three seven one, zero eighty two, nine one eight".
 
 
-and it has a little sorting algorithm at the top of it all in order to decide whether to go with a, b or c.  
+The gem has a little sorting algorithm on the top of it all in order to decide whether to go with a, b or c.  
 
+This core functionality makes it easy to extend services to:
 
---Soon to come: Floats/Scientific measurements
+* Floats/Scientific measurements
 
---Soon to come: Zips && Post Codes 
+* Zips && Post Codes 
 
---Soon to come: Pages
+* Pages
 
---Soon to come: Checks
+* Bank Checks
 
---Soon to come: Co-ordinates 
+* Co-ordinates 
 
---Soon to come: ISBNs
+* ISBNs
 
---Soon to come: Pay_as_you_go mobile telephony activation codes
+* Pay_as_you_go mobile telephony activation codes
 
 --Soon to come: An explaining facility on how big is that number, with examples 
 drawn by science (feel free to contribute on this one as long as you are willing and 
